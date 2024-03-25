@@ -4,14 +4,11 @@ using namespace std;
 
 int factorial(int n)
 {
-    //base case
     if(n==0)
     {
         return 1;
     }
-    int st=factorial(n-1);
-    int en=n*st;
-    return en;
+    return n*factorial(n-1);
 }
 
 int main()
